@@ -15,7 +15,7 @@ driver = webdriver.Chrome(service=service, options=options)
 
 # открываем страницу
 driver.get("https://www.random.org/coins/")
-time.sleep(10)
+time.sleep(6)
 
 # выбираем количество монет для броска
 select_flip = Select(driver.find_element(By.CSS_SELECTOR,'select[name="num"]'))
